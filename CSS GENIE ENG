@@ -1,6 +1,6 @@
-game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.SonicExeLaugh.Playing = true
-game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.SonicExeLaugh.Looped = true
-game:GetService("Players").LocalPlayer:Destroy()
+- - game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.SonicExeLaugh.Playing = true
+- - game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.SonicExeLaugh.Looped = true
+- - game:GetService("Players").LocalPlayer:Destroy()
 local SlotID = 1
 local LevelCreateID = 1
 local antiError = 1
