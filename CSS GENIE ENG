@@ -37,7 +37,7 @@ local Tabs = {
     MakeLevel = Window:AddTab({ Title = "Make Level", Icon = "plus" }),
     Functions = Window:AddTab({ Title = "Sounds+", Icon = "music-2" }),
     LevelCreator = Window:AddTab({ Title = "Level Creator", Icon = "package-plus" }),
-    Skins = Window:AddTab({ Title = "Skin Change", Icon = "library" }),
+    Skins = Window:AddTab({ Title = "OP Local Skins", Icon = "paintbrush" }),
     NewMusic = Window:AddTab({ Title = "New Music", Icon = "music" }),
     CSSWiki = Window:AddTab({ Title = "CSS Wiki", Icon = "library" }),
     Info = Window:AddTab({ Title = "Info", Icon = "info" }),
@@ -1826,26 +1826,6 @@ Tabs.LevelCreator:AddButton({
  game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 532
  end 
 })
-Tabs.LevelCreator:AddButton({
- Title = "Insert Bridge",
- Callback = function()
- game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
- Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 214
- end 
-})
-Tabs.LevelCreator:AddButton({
- Title = "Insert Bridge Support",
- Callback = function()
- game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
- Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 532
- end 
-})
 Tabs.Skins:AddButton({
  Title = "Dev Title",
  Callback = function()
@@ -1966,7 +1946,7 @@ end)
 		Content = "First, go in Level Creator and click on the red music on topbar, click on buttons in script and songs id put automatically"
     })
 Tabs.NewMusic:AddParagraph({
-    Title = "Sonic 2 Archives Soon..."
+    Title = "Sonic 2 Archives Very Soon..."
 })
 --Tabs.NewMusic:AddButton({
 -- Title = "Ocean Wind Zone",
