@@ -1932,14 +1932,14 @@ end)
     Tabs.Skins:AddParagraph({
         Title = "Secret Characters"
     })
-local Toggle15 = Tabs.Skins:AddToggle("MyToggle15", {Title = "Sonic SCD To Sonic EXE", Default = false })
-Toggle15:OnChanged(function(ToggleGui14)
+local SecretToggle = Tabs.Skins:AddToggle("MySecretToggle", {Title = "Sonic SCD To Sonic EXE", Default = false })
+SecretToggle:OnChanged(function(SecretToggle)
 game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
-if ToggleGui14 == true then
+if SecretToggle == true then
 game:GetService("ReplicatedStorage").Objects["Sonic_SCD"].Name = "Sonic_EXE"
 game:GetService("ReplicatedStorage").Objects["Sonic_EXE"].Name = "Sonic_SCD"
 end
-if ToggleGui14 == false then
+if SecretToggle == false then
 game:GetService("ReplicatedStorage").Objects["Sonic_EXE"].Name = "Sonic_SCD"
 game:GetService("ReplicatedStorage").Objects["Sonic_SCD"].Name = "Sonic_EXE"
 end
@@ -1950,14 +1950,10 @@ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = 
 if SecretToggle1 == true then
 game:GetService("ReplicatedStorage").Objects["Sonic_Tiny"].Name = "Sonic_SCD"
 game:GetService("ReplicatedStorage").Objects["Sonic_SCD"].Name = "Sonic_Tiny"
-game:GetService("ReplicatedStorage").Animations["Sonic_Tiny"].Name = "Sonic_SCD"
-game:GetService("ReplicatedStorage").Animations["Sonic_SCD"].Name = "Sonic_Tiny"
 end
 if SecretToggle1 == false then
 game:GetService("ReplicatedStorage").Objects["Sonic_SCD"].Name = "Sonic_Tiny"
 game:GetService("ReplicatedStorage").Objects["Sonic_Tiny"].Name = "Sonic_SCD"
-game:GetService("ReplicatedStorage").Animations["Sonic_SCD"].Name = "Sonic_Tiny"
-game:GetService("ReplicatedStorage").Animations["Sonic_Tiny"].Name = "Sonic_SCD"
 end
 end)
 local SecretToggle2 = Tabs.Skins:AddToggle("MySecretToggle2", {Title = "Dr_Robotnik To Baldi", Default = false })
