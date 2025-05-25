@@ -21,7 +21,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "CSS GENIE V0.95",
+    Title = "CSS GENIE V0.975",
     SubTitle = "",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -50,8 +50,8 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "CSS GENIE (Pre-Release)",
-        Content = "Added New Objects From Mystic Cave And Function Make Mystic Cave (On Make Level)",
+        Title = "CSS GENIE V0.975",
+        Content = "Added New Objects : From Mystic Cave And Global Objects . Also Function Make Mystic Cave (On Make Level)",
         SubContent = "", -- Optional
         Duration = 10 -- Set to nil to make the notification not disappear
     })
@@ -1217,7 +1217,8 @@ Tabs.LevelCreator:AddButton({
  end 
 })
     Tabs.LevelCreator:AddParagraph({
-        Title = "Objects From Old Test"
+        Title = "Global Objects (NEW)",
+		Content = "For Each Editor's Zone!"
     })
 Tabs.LevelCreator:AddButton({
  Title = "Insert Conveyor Belt",
@@ -1239,6 +1240,129 @@ Tabs.LevelCreator:AddButton({
  game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 33
  end 
 })
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Balloon",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 33
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Dash Panel",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 258
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Spinning Spike Chain",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 124
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert MGZ Spinning Spikeball",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 228
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Medium Spike Ball",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 136
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Big Spike Ball",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 137
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Locked Door",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 147
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Locked Chara Door",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 152
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Arrow",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 174
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Warning Sign",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 180
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Path Swapper",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 539
+ end 
+})
+Tabs.LevelCreator:AddButton({
+ Title = "Insert Master Emerald",
+ Callback = function()
+ game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
+ Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
+ game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 171
+ end 
+})
+    Tabs.LevelCreator:AddParagraph({
+        Title = "Objects From Old Test"
+    })
 Tabs.LevelCreator:AddButton({
  Title = "Insert Block",
  Callback = function()
@@ -1449,16 +1573,6 @@ Tabs.LevelCreator:AddButton({
  game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
  game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
  game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 518
- end 
-})
-Tabs.LevelCreator:AddButton({
- Title = "Insert Ballon",
- Callback = function()
- game:GetService("ReplicatedStorage").Game.Backdrop.Main.Engine.select.Playing = true
- Instance.new("NumberValue",game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring)
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId:Destroy()
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.Value.Name = "ObjId"
- game:GetService("Players").LocalPlayer.PlayerGui.LevelCreator.Backdrop.Screen.ObjectsList.Ring.Ring.ObjId.Value = 34
  end 
 })
 Tabs.LevelCreator:AddButton({
