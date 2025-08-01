@@ -1,1 +1,29 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Kirill31312/CSS-GENIE/refs/heads/main/CSS%20GENIE%20TEST", true))()
+workspace.Misc.CSS:Destroy()
+            for i,v in pairs(game.Players.LocalPlayer.PlayerGui:GetChildren()) do
+				if v.Name ~= "FakeTopBar" and v.Name ~= "MusicHandler" and v.Name ~= "TouchGui" then
+					v:Destroy()
+				end
+			end
+            game:GetService("Players").LocalPlayer.PlayerGui.MusicHandler["Music Script"].Intro.SoundId = "rbxassetid://360710833"
+            game:GetService("Players").LocalPlayer.PlayerGui.MusicHandler["Music Script"].Loop.SoundId = "rbxassetid://360710888"
+            game:GetService("Players").LocalPlayer.PlayerGui.MusicHandler["Music Script"].Loop.Playing = false
+            game:GetService("Players").LocalPlayer.PlayerGui.MusicHandler["Music Script"].Intro.Playing = true
+            Instance.new("ImageLabel", game.CoreGui.RobloxGui)
+            game.CoreGui.RobloxGui.ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+            game.CoreGui.RobloxGui.ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+            game.CoreGui.RobloxGui.ImageLabel.Position = UDim2.new(0.325, 0, 0.2, 0)
+            game.CoreGui.RobloxGui.ImageLabel.Size = UDim2.new(0.35, 0, 0.6, 0)
+            game.CoreGui.RobloxGui.ImageLabel.Image = "rbxassetid://131969094889966"
+            game.ReplicatedStorage.Game:Destroy()
+            game.ReplicatedStorage.MainMenu:Destroy()
+            game.ReplicatedStorage.LevelSelect:Destroy()
+            game.ReplicatedStorage.LevelCreator:Destroy()
+            game.ReplicatedStorage.ManageLevels:Destroy()
+            game.ReplicatedStorage.ManageStages:Destroy()
+            game.ReplicatedStorage.S3SSCreator:Destroy()
+            game.ReplicatedStorage.AnimationGui:Destroy()
+            game.ReplicatedStorage.CustomLevelSelect:Destroy()
+            game.ReplicatedStorage.CustomStageSelect:Destroy()
+            game.ReplicatedStorage.AdventureCreator:Destroy()
+            game.ReplicatedStorage.AdventureManageGui:Destroy()
+            game.ReplicatedStorage.AdventurePlayCustoms:Destroy()
